@@ -1,0 +1,256 @@
+/*--- Welcome section ---*/
+
+.welcome-section {
+    background-color: #031383;
+}
+
+.title-welcome {
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 992px) {
+
+    .welcome-section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .title-welcome {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+
+}
+
+/*--- Features section ---*/
+
+#section-features {
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+}
+
+.card-style {
+    padding: 2rem;
+}
+
+@media (max-width: 768px) {
+
+    #section-features {
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+    }
+
+    .card-style {
+        border: none;
+    }
+
+}
+
+/*--- About section ---*/
+
+#logo{
+  align-items: center;
+  flex-grow: center;
+}
+
+#section-about {
+    margin-top: 5rem;
+}
+
+.table-text {
+    padding-left: 0!important;
+    font-family: 'Raleway', sans-serif;
+}
+
+.highlighted-text {
+    background: linear-gradient(to right, #5481E4 0%, #37D0DD 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+hr {
+   border-top: 1px solid #191b1d;
+}
+
+.country-program-wrapper {
+    background: #fff;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+}
+
+/*--- Speakers section ---*/
+
+#section-speakers {
+    /*--padding-top: 6rem;--*/
+    padding-bottom: 2rem;
+}
+
+.speakers-wrapper {
+    padding-right: 45px;
+    padding-left: 15px;
+}
+
+
+.card {
+    background: transparent!important;
+}
+
+@media (max-width: 768px) {
+
+    #section-speakers {
+        padding-top: 4rem;
+        padding-bottom: 0;
+    }
+
+    .speakers-wrapper {
+        padding-right: 15px;
+    }
+
+    .card-title {
+        font-size: 0.9rem;
+    }
+
+    .card-text {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .card-title {
+        font-size: 0.7rem;
+    }
+
+    .card-text {
+        font-size: 0.5rem;
+    }
+
+}
+
+
+/*--- Contact us  ---*/
+
+button{
+  flex-grow: center;
+}
+
+/*--- Experts sections ---*/
+
+#section-experts {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+
+.experts-list-item {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    list-style: none;
+    position: relative;
+}
+
+.experts-list-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    background: url(../content/img/check.svg);
+}
+
+@media (max-width: 768px) {
+
+    #section-experts {
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+    }
+
+}
+
+/*--- Partners sections ---*/
+
+#section-partners {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+
+#section-partners .card-img-top{
+  height : 200px;
+  width : 170px;
+}
+
+#section-partners h6{
+  width : 85%;
+  padding-right: 2px;
+}
+
+.partners-list-item {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    list-style: none;
+    position: relative;
+}
+
+.partners-list-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    background: url(../content/img/check.svg);
+}
+
+.partners-wrapper {
+    padding-right: 30px;
+    padding-left: 15px;
+}
+
+@media (max-width: 450px) {
+
+    #section-partners {
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .card-title {
+        font-size: 0.7rem;
+    }
+
+    .card-text {
+        font-size: 0.5rem;
+    }
+
+}
+
+
+
+/*--- FAQ sections ---*/
+
+#section-faq {
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+    background-color: #fcfcfc;
+}
+
+
+@media (max-width: 768px) {
+
+    #section-faq {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+}
