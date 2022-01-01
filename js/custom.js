@@ -118,11 +118,11 @@ function setup() {
 }
 
 function draw() {
-  
+
   	ambientLight(150);
 		locX = mouseX - width / 2;
   		locY = mouseY - height / 2;
-	
+
 	if(mouseIsDown == false){
 		rotateTheX = rotateX(0);
 		rotateTheY = rotateY(millis() / 5000);
@@ -130,7 +130,7 @@ function draw() {
 		rotateTheX = rotateX(-locY/180);
 		rotateTheY = rotateY(locX/180);
 	}
-	
+
   	pointLight(25, 250, 250, locX, locY, 200);
   	pointLight(255,255,255, 50, 50, 150);
 	texture(img);
@@ -138,7 +138,7 @@ function draw() {
 }
 
 function mouseDragged() {
-	mouseIsDown = true;	
+	mouseIsDown = true;
 }
 
 function mousePressed() {
@@ -156,4 +156,28 @@ function mouseReleased() {
 function windowResized(){
 	let renderer = createCanvas(sketchWidth, sketchHeight, WEBGL);
 	renderer.parent("canvas-box");
+}
+
+// FAQ toggle buttons
+var divs = ["q1", "q2", "q3" , "q4" , "q5"];
+var visibleDivId = null;
+function toggleVisibility(divId) {
+  if(visibleDivId === divId) {
+    //visibleDivId = null;
+  } else {
+    visibleDivId = divId;
+  }
+  hideNonVisibleDivs();
+}
+function hideNonVisibleDivs() {
+  var i, divId, div;
+  for(i = 0; i < divs.length; i++) {
+    divId = divs[i];
+    div = document.getElementById(divId);
+    if(visibleDivId === divId && div.style.display === "none") {
+      div.style.display = "block";
+    } else {
+      div.style.display = "none";
+    }
+  }
 }
