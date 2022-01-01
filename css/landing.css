@@ -181,16 +181,6 @@ button{
     padding-bottom: 4rem;
 }
 
-#section-partners .card-img-top{
-  height : 200px;
-  width : 170px;
-}
-
-#section-partners h6{
-  width : 85%;
-  padding-right: 2px;
-}
-
 .partners-list-item {
     margin-bottom: 0.75rem;
     padding-left: 1.5rem;
@@ -208,12 +198,7 @@ button{
     background: url(../content/img/check.svg);
 }
 
-.partners-wrapper {
-    padding-right: 30px;
-    padding-left: 15px;
-}
-
-@media (max-width: 450px) {
+@media (max-width: 768px) {
 
     #section-partners {
         padding-top: 5rem;
@@ -221,21 +206,6 @@ button{
     }
 
 }
-
-
-@media (max-width: 576px) {
-
-    .card-title {
-        font-size: 0.7rem;
-    }
-
-    .card-text {
-        font-size: 0.5rem;
-    }
-
-}
-
-
 
 /*--- FAQ sections ---*/
 
@@ -253,4 +223,12 @@ button{
         padding-bottom: 4rem;
     }
 
+}
+
+#buttonQ {
+  border-radius: : 12px;
+  background-color: inherit;
+  text-align: center;
+  display: inline-block;
+  font-size: 8px;
 }
