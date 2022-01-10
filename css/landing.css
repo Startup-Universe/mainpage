@@ -225,10 +225,13 @@ button{
 
 }
 
-#buttonQ {
-  border-radius: : 12px;
-  background-color: inherit;
-  text-align: center;
-  display: inline-block;
-  font-size: 8px;
+.rotate {
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+.rotate.down {
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    transform:rotate(90deg);
 }
