@@ -1,5 +1,5 @@
 // FAQ toggle buttons
-var divs = ["q1", "q2", "q3" , "q4" , "q5"];
+var divs = ["q1", "q2", "q3" , "q4" , "q5" , "q6"];
 var visibleDivId = null;
 function toggleVisibility(divId) {
   if(visibleDivId === divId) {
@@ -21,3 +21,7 @@ function hideNonVisibleDivs() {
     }
   }
 }
+
+$(".rotate").click(function () {
+    $(this).toggleClass("down");
+})
