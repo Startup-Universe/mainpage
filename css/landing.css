@@ -51,16 +51,7 @@
 
 }
 
-/*--- About section ---*/
-
-#logo{
-  align-items: center;
-  flex-grow: center;
-}
-
-#section-about {
-    margin-top: 5rem;
-}
+/*--- Funding opportunities section ---*/
 
 .table-text {
     padding-left: 0!important;
@@ -78,33 +69,22 @@ hr {
    border-top: 1px solid #191b1d;
 }
 
-.country-program-wrapper {
-    background: #fff;
-    padding: 0.6rem;
-    border-radius: 0.5rem;
-}
-
 /*--- Speakers section ---*/
 
 #section-speakers {
-    /*--padding-top: 6rem;--*/
+    /*--- padding-top: 6rem; ---*/
     padding-bottom: 2rem;
 }
 
 .speakers-wrapper {
-    padding-right: 45px;
+    padding-right: 30px;
     padding-left: 15px;
-}
-
-
-.card {
-    background: transparent!important;
 }
 
 @media (max-width: 768px) {
 
     #section-speakers {
-        padding-top: 4rem;
+        /*--- padding-top: 4rem; ---*/
         padding-bottom: 0;
     }
 
@@ -132,13 +112,6 @@ hr {
         font-size: 0.5rem;
     }
 
-}
-
-
-/*--- Contact us  ---*/
-
-button{
-  flex-grow: center;
 }
 
 /*--- Experts sections ---*/
@@ -177,32 +150,33 @@ button{
 /*--- Partners sections ---*/
 
 #section-partners {
-    padding-top: 5rem;
-    padding-bottom: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 8rem;
 }
 
-.partners-list-item {
-    margin-bottom: 0.75rem;
-    padding-left: 1.5rem;
-    list-style: none;
-    position: relative;
+.slick-track{
+    display: flex;
 }
 
-.partners-list-item::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 5px;
-    width: 15px;
-    height: 15px;
-    background: url(../content/img/check.svg);
+.slick-slide {
+    margin-bottom: 1rem;
+    padding-right: 1.5rem;
+    outline: none;
+    display: flex!important;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-wrapper {
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
 
     #section-partners {
-        padding-top: 5rem;
-        padding-bottom: 2rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
 
 }
@@ -222,8 +196,17 @@ button{
         padding-top: 4rem;
         padding-bottom: 4rem;
     }
-
 }
+
+#newsletter{
+  width: inherit;
+  border: 2px solid #f40654;
+  height: 60px;
+  color: white;
+  background-color: #00008b;
+  padding: 15px 25px;
+}
+
 
 .rotate {
     -moz-transition: all .5s linear;
@@ -234,4 +217,46 @@ button{
     -moz-transform:rotate(90deg);
     -webkit-transform:rotate(90deg);
     transform:rotate(90deg);
+}
+
+
+#web:hover {background-color: #37D0DD;}
+
+#web {
+  border-radius: 10px;
+  background-color: #f40654;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 2px;
+  width: 90px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#web span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#web span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -17px;
+  transition: 0.5s;
+}
+
+#web:hover span {
+  padding-right: 20px;
+}
+
+#web:hover span:after {
+  opacity: 1;
+  right: 0;
 }
