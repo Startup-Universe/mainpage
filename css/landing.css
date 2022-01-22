@@ -220,7 +220,6 @@ hr {
 }
 
 
-#web:hover {background-color: #37D0DD;}
 
 #web {
   border-radius: 10px;
@@ -231,16 +230,21 @@ hr {
   font-size: 15px;
   padding: 2px;
   width: 90px;
-  transition: all 0.5s;
+  transition: all 0s;
   cursor: pointer;
   margin: 5px;
+}
+
+#web:hover {
+  background-color: #FF99CC;
+  color: black;
 }
 
 #web span {
   cursor: pointer;
   display: inline-block;
   position: relative;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 #web span:after {
@@ -249,7 +253,7 @@ hr {
   opacity: 0;
   top: 0;
   right: -17px;
-  transition: 0.5s;
+  transition: 0s;
 }
 
 #web:hover span {
