@@ -13,6 +13,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .fa-twitter-square:before {
   content: "\f081";
 }
@@ -35,6 +36,15 @@
 .fa-instagram:before {
   content: "\f16d";
 }
+
+.fa-medium:before {
+  content: "\f23a";
+}
+
+.fa-youtube:before {
+  content: "\f167";
+}
+
 .fa-copyright:before {
   content: "\f1f9";
 }
