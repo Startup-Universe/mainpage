@@ -264,3 +264,18 @@ hr {
   opacity: 1;
   right: 0;
 }
+
+
+.raise{
+  background-color: inherit;
+  border-radius: 10px;
+  display: grid;
+  margin: auto;
+  color: white;
+}
+
+.raise:hover, .raise:focus {
+  box-shadow: 2px 1px 10px 5px #00ffff;
+  transform: translateY(-0.25em);
+  border-radius: 10px;
+}
