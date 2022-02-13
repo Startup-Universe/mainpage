@@ -282,8 +282,8 @@ hr {
 
 
 .glow-on-hover {
-    width: 220px;
-    height: 50px;
+    width: 102px;
+    height: 40px;
     border: none;
     outline: none;
     color: #fff;
@@ -300,6 +300,7 @@ hr {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
+    color: blue;
     top: -2px;
     left:-2px;
     background-size: 400%;
@@ -308,13 +309,13 @@ hr {
     width: calc(100% + 4px);
     height: calc(100% + 4px);
     animation: glowing 20s linear infinite;
-    opacity: 0;
+    opacity: 0.5;
     transition: opacity .3s ease-in-out;
     border-radius: 10px;
 }
 
 .glow-on-hover:active {
-    color: #000
+    color: blue;
 }
 
 .glow-on-hover:active:after {
@@ -341,4 +342,15 @@ hr {
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
+}
+
+.photoframe {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #00008B;
+  border-radius: 18px;
+  box-shadow: 2px 1px 10px 5px white;
+  margin: 10px 10px;
+  padding: 30px;
 }
