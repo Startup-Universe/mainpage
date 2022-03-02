@@ -488,8 +488,8 @@ hr {
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 50px;
-  width: 50px;
+  height: 80px;
+  width: 80px;
   margin: 0 2px;
   background-color: #f40654;
   border-radius: 50%;
