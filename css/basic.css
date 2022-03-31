@@ -146,6 +146,10 @@ a:active {
     margin-right: unset;
 }
 
+.w-95 {
+    width: 95%!important;
+}
+
 .w-90 {
     width: 90%!important;
 }
@@ -157,6 +161,7 @@ a:active {
 .w-35 {
     width: 35%!important;
 }
+
 
 .fs-09 {
     font-size: 0.9rem!important;
