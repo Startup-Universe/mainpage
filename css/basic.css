@@ -88,7 +88,7 @@ a:active {
 }
 
 .background-standing {
-    background-color: ##F1F3FF;
+    background-color: #F1F3FF;
     padding: 4rem;
 }
 
@@ -182,7 +182,7 @@ a:active {
 .card-img-top,
 .card {
     border-radius: 0.3rem!important;
-    background-color: ##F1F3FF;
+    background-color: #F1F3FF;
 }
 
 .card-img-overlay {
