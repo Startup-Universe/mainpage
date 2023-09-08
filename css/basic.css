@@ -204,6 +204,17 @@ a:active {
   margin-bottom: 4rem;
 }
 
+.partners-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 0;
+}
+
+.partners-wrapper > h6 {
+  text-align: center;
+}
+
 /*--- Nav bar ---*/
 
 .navbar-light {

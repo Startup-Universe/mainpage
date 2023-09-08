@@ -45,6 +45,10 @@
   }
 }
 
+.card-img-overlay {
+  padding: 0.5rem;
+}
+
 /*--- Funding opportunities section ---*/
 
 .table-text {
@@ -203,17 +207,21 @@ hr {
 }
 
 #web {
-  border-radius: 10px;
+  border-radius: 12px;
   background-color: #f40654;
   border: none;
   color: #ffffff;
   text-align: center;
-  font-size: 15px;
-  padding: 2px;
-  width: 90px;
+  padding: 0.25rem;
   transition: all 0s;
   cursor: pointer;
   margin: 5px;
+  transition: background-color 0.2s;
+}
+
+#web img {
+  width: 24px;
+  height: 24px;
 }
 
 #web:hover {
@@ -221,25 +229,25 @@ hr {
   color: black;
 }
 
-#web span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.4s;
-}
+// #web span {
+//   cursor: pointer;
+//   display: inline-block;
+//   position: relative;
+//   transition: 0.4s;
+// }
 
-#web span:after {
-  content: "\00bb";
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -17px;
-  transition: 0s;
-}
+// #web span:after {
+//   content: "\00bb";
+//   position: absolute;
+//   opacity: 0;
+//   top: 0;
+//   right: -17px;
+//   transition: 0s;
+// }
 
-#web:hover span {
-  padding-right: 20px;
-}
+// #web:hover span {
+//  padding-right: 20px;
+// }
 
 #web:hover span:after {
   opacity: 1;
